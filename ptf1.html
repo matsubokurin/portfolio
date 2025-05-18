@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<title>JAVA</title>
+
+
+<head>
+
+	<style>
+	body{/*全体設定*/
+	 background-color: #E1CDDF;
+	font-family:Arial,sans-serif;
+		  }
+		
+	.text1{/*テキスト設定1*/
+	font-size:20px;
+	text-align: center;
+	  }
+	
+	h1{
+	
+	text-align: center;
+	
+	  }
+	
+	.img-op {/*コンテンツ設定*/
+	text-align: center;
+	 width: auto;
+    height: auto;
+    object-fit: cover;
+	 
+	 
+            }
+
+
+	.code-opt{
+	text-align: left;
+				 }
+	
+	</style>
+
+</head>
+
+
+  <body>
+<h1>JAVAの学習</h1>
+
+<div class="text1">
+<p>～JAVAの学習に使っているファイルのご紹介～</p>
+</div>
+
+
+
+
+
+
+	<div class="img-op">
+		
+    <img src="jvpt.png" alt="画像表示エラー">
+  	</div>
+  	
+<div class="text1">		
+<p></p>
+<p>上図が実行結果です。</p>
+<p></p>
+<p></p>
+<p>テキストの表示、数字の演算処理から始まり順番に学習しております。</p>
+<p>学習の応用として、今回ランダムな0-10の数値を数式に代入し、</p>
+<p>結果に応じてテキストが出力される簡単な抽選ゲームのようなものを作りました。</p>
+<p>以下、ソースコードとなります。</p>
+
+</div>
+
+
+<div class="code-opt">
+
+<p>public static void main(String args[]){/*プログラム開始*/</p>
+<p></p>
+<p>System.out.print("Hello");/*文字を出力*/</p>
+<p>System.out.println("A whole new World!"); /*文字を出力*/</p>
+<p>package test;</p>
+<p></p>
+<p>public class Ctest {</p>
+<p></p>
+<p></p>	
+<p></p>	
+<p></p>	
+<p>public static void main(String[] args) {</p>
+<p>// TODO Auto-generated method stub</p>
+<p></p>		
+<p></p>
+<p></p>		   
+<p></p>		       
+<p>System.out.print("Hello");/*文字を出力*/</p>
+<p>System.out.println("A whole new World!"); /*文字を出力*/</p>
+<p></p>				 
+<p>int a; /*変数宣言*/</p>
+<p>int b;
+<p></p>				 
+<p>int ran1 = (int)(Math.random()*10)+0;</p>
+<p>int ran2 = (int)(Math.random()*10)+0;</p>
+<p></p>				 
+<p>int plus,minous; /*式を代入するための変数宣言*/</p>
+<p></p>				 
+<p></p>			 
+<p></p>				 
+<p> a=ran1; /*代入*/</p>
+<p>b=ran2;
+<p></p>				 
+<p> plus = a + b; /*式を代入*/</p>
+<p> minous=a - b;</p>
+<p></p>				 
+<p></p>				
+<p></p>				 
+<p></p>				 
+<p>System.out.println("nomebr"+ran1);/*数値をランダム生成*/</p>
+<p></p>				 
+<p>if(ran1==3||ran1==7) { /*条件指定。指定の数値で下記テキストを出力*/</p>
+<p> System.out.println("ラッキー！");</p>
+				 					  }</p>
+<p>else {						/*その他の場合の条件設定*/</p>
+<p>System.out.println("出力済");</p>
+<p> }</p>
+<p></p>				 
+<p></p>				
+<p></p>				 
+<p> System.out.println("a+b="+plus); /*a+bをテキスト表示-代入した計算結果を表示*/</p>
+<p>System.out.println("a-b="+minous);/*a-bをテキスト表示-計算結果表示*/</p>
+<p></p>				 
+<p>if(plus==10||minous==0) {			/*条件指定　特定計算結果で下記テキストを表示*/</p>
+<p>System.out.println("ラッキー");</p>
+					 				     }</p>
+<p></p>
+<p>if(ran1==7 && plus==7 && minous==7) {/*条件指定　特定演算結果で下記テキストを表示*/</p>
+<p>System.out.println("超ラッキー!!");</p>
+<p>}</p>
+<p></p>
+<p></p> 
+<p>}</p>
+<p></p>
+<p>}</p>
+<p></p>
+
+
+</div>
+
+
+
+
+
+  </body>
+</html>    

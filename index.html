@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+    <title>ポートフォリオの紹介ページ</title>
+
+
+  <style>/*HTML追加の宣言のようなもの*/
+   body{
+   background-color: #f0f0f0;
+   font-family: Arial, sans-serif;
+   text-align: center;/*文字の中央揃え*/
+        }
+
+   h1{
+   font-size: 50px;
+ text-align: center;
+     }
+
+
+   
+
+.slider-option {
+    overflow: hidden;
+    position: relative;
+  display: flex;
+    margin: 0 auto;  /* 中央揃え */
+    
+               }
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;  /* 縮小の防止 */
+  animation: slide 8s infinite;
+    background-color: #ddd;
+        }
+
+.slide img {
+/*画像設定*/
+  
+  width: auto;
+    height: auto;
+    object-fit: cover;
+            }
+
+@keyframes slide { 
+/*アニメーションの時間（動き）設定*/
+
+0% { transform: translateX(0%);}
+25%{ transform: translateX(0%);}
+35%{ transform:translateX(-100%);}
+75%{ transform:translateX(-100%);}
+100%{transform:translateX(0%);}
+       
+                  }
+
+
+  .mojistyle{
+   font-family: Arial serif;
+            }
+
+
+  </style>
+   
+</head>
+
+  <body>
+<h1>ポートフォリオのご紹介</h1>
+<p>粗方の目安としていただけますと幸いです</p>
+
+
+ <div class="slider-option">
+
+  <div class="slide">
+   <a href="ptf2.html">
+          <img src="htmlpt.png" alt="画像表示エラー">
+          <p>当該ページのソースコード</p>
+   </a>
+  </div>
+
+
+    <div class="slide">
+       <a href="ptf1.html">
+    <img src="jvpt.png" alt="画像2表示エラー">
+     <p>JAVAの学習のファイルのソースコード</p>
+       </a>
+  </div>
+</div>
+
+<p>基本的には短大にて学んだことをできるだけアウトプットしつつ適宣資料を確認し、</p>
+<p>2年のブランクのウォーミングアップを兼ねて転職活動開始とともに制作を始めました。</p>
+<p>未経験かつ小売業として勤務しながらの制作のためクオリティが低く、お見苦しい点もおありかとは思いますが、</p>
+<p>やはりとても楽しく制作でき、改めてプログラミングの楽しさを実感いたしました。</p>
+<p>今後も更に技術を磨いていきたいと考えております。</p>
+  
+
+
+
+  </body>
+</html>
