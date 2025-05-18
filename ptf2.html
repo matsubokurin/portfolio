@@ -24,16 +24,25 @@
 	  }
 	
 	.img-op {/*コンテンツ設定*/
-	display:block;
+	
 	text-align: left;
-	 width: auto;
     height: auto;
     
             }
 
 .img-op2 {
-	display:block;
+	display:flex;
+	flex-direction:column;
 		 }
+		 
+		 
+		 .img1op{
+		 width: 300px;
+		 		}
+		 
+		 .img2op{
+		 width: 400px;
+		 		}
 
 	.code-opt{
 	text-align: left;
@@ -70,9 +79,13 @@
 
 <div class="img-op">
 		<div class="img-op2">
-		
+	<div class="img1op">	
     <img src="html1.png" alt="画像表示エラー">
+    </div>
+    
+    <div class="img2op">
     <img src="html2.png" alt="画像表示エラー">
+	</div>
  		</div>
  </div>
 
